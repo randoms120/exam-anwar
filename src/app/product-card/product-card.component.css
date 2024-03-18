@@ -1,0 +1,24 @@
+.card {
+  min-height: 400px;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+
+.card-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/1;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}

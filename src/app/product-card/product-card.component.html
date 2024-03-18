@@ -1,0 +1,8 @@
+<div class="card" style="width: 15rem;" routerLink="/detail/{{product.id}}">
+  <img src="{{product.images[0]}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.title }}</h5>
+    <p class="card-text">{{ product.price | currency }}</p>
+    <a routerLink="/detail/{{product.id}}" class="btn btn-primary">Details</a>
+  </div>
+</div>

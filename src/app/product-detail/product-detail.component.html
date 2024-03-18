@@ -1,0 +1,48 @@
+<app-header></app-header>
+
+<div class="detail-container">
+  <div class="details">
+    <div>
+      <h1>{{ product.title }}</h1>
+    </div>
+
+    <div>
+      <p>{{ product.description }}</p>
+    </div>
+
+    <div class="detail">
+      <p class="detail-title">Rating</p>
+      <p>{{ product.rating }} <img src="assets/star-icon.png" alt="icon" style="width: 20px; height : 20px;"></p>
+    </div>
+
+    <div class="detail">
+      <p class="detail-title">Price</p>
+      <p>{{ product.price | currency }}</p>
+      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
+    </div>
+
+    @if (product.discountPercentage > 0) {
+      <div class="detail">
+        <p class="detail-title">Discount</p>
+        <p style="color: #198754;">-{{ product.discountPercentage }}%</p>
+      </div>
+    }
+
+    <div class="detail">
+      <p class="detail-title">Brand</p>
+      <p>{{ product.brand }}</p>
+    </div>
+
+    <div class="detail">
+      <p class="detail-title">Category</p>
+      <p>{{ product.category }}</p>
+    </div>
+  </div>
+
+  <div class="imgs">
+    <img src="{{product.images[0]}}" alt="image">
+    <img src="{{product.images[2]}}" alt="image">
+    <img src="{{product.images[3]}}" alt="image">
+  </div>
+
+</div>
